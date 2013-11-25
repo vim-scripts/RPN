@@ -1,0 +1,29 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4781
+
+Examples:
+
+echo Rpn#Eval( '2 3 +' )
+Or
+echo Rpn#Eval( 2, 3, '+' )
+
+Suggested command:
+com! -nargs=+ Rpn echo Rpn#Eval( <f-args> )
+
+Then, Rpn 2 3 + echoes the result.
+
+Operators:
++
+-
+*
+/
+%
+^
+
+Commands:
+d: duplicate last entry
+r: reverse last two entries
+v: square root the last entry
+
+Special:
+ans: Replaces with the answer from the last entry
+
